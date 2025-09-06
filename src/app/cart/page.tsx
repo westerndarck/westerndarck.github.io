@@ -8,20 +8,12 @@ import { Input } from '@/components/ui/input';
 import { Minus, Plus, Trash2, ArrowRight } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { useState } from 'react';
 
 export default function CartPage() {
   const { cart, updateQuantity, removeFromCart } = useCart();
-  const [shippingCost, setShippingCost] = useState<number | null>(null);
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  const total = subtotal + (shippingCost || 0);
-
-  const handleShippingCalculation = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    // Placeholder logic
-    setShippingCost(10.50);
-  };
+  const total = subtotal;
 
   if (cart.length === 0) {
     return (
@@ -91,7 +83,7 @@ export default function CartPage() {
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>
-                <span>{shippingCost ? `${shippingCost.toLocaleString('en-US', { style: 'currency', currency: 'LKR' })}` : 'Calculated at next step'}</span>
+                <span className="font-medium text-primary">Local Pickup Only</span>
               </div>
               <Separator />
               <div className="flex justify-between font-bold text-lg">
@@ -101,13 +93,6 @@ export default function CartPage() {
               <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
                 Proceed to Checkout <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Separator className="my-4" />
-              <form onSubmit={handleShippingCalculation} className="space-y-2">
-                <p className="font-medium">Estimate Shipping</p>
-                <Input placeholder="Country" />
-                <Input placeholder="ZIP / Postal Code" />
-                <Button variant="secondary" className="w-full">Calculate Shipping</Button>
-              </form>
             </CardContent>
           </Card>
         </div>
