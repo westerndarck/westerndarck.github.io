@@ -10,12 +10,12 @@ export default function ProductsPage() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-headline font-bold">Our Product</h1>
+        <h1 className="text-4xl md:text-5xl font-headline font-bold">Our Products</h1>
         <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
-          Indulge in our freshly baked, delicious cinnamon rolls.
+          Indulge in our freshly baked goods and authentic Sri Lankan spices.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 justify-center">
         {products.map((product: Product) => (
           <Card key={product.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm mx-auto">
             <CardHeader className="p-0">

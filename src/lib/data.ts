@@ -18,6 +18,30 @@ export const products: Product[] = [
     stock: 50,
     reviews: [],
     category: 'Specialty',
+  },
+  {
+    id: '2',
+    name: 'Black Pepper',
+    slug: 'black-pepper',
+    description: 'Whole black peppercorns with a sharp, pungent flavor. Sourced from the finest pepper vines in Sri Lanka, these peppercorns will add a kick to any dish.',
+    shortDescription: '100g of whole black peppercorns.',
+    price: 1500,
+    images: ['https://images.unsplash.com/photo-1599940822394-b295e871e98b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzJTIwYmxhY2slMjBwZXBwZXJ8ZW58MHx8fHwxNzE2NDEyNjU0fDA&ixlib=rb-4.1.0&q=80&w=1080'],
+    stock: 100,
+    reviews: [],
+    category: 'Sticks',
+  },
+  {
+    id: '3',
+    name: 'Cloves',
+    slug: 'cloves',
+    description: 'Aromatic and flavorful whole cloves, perfect for both sweet and savory recipes. These cloves are hand-picked to ensure the highest quality.',
+    shortDescription: '50g of whole cloves.',
+    price: 1200,
+    images: ['https://images.unsplash.com/photo-1555541932-d1b7d5558184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbG92ZXN8ZW58MHx8fHwxNzE2NDEyNzM1fDA&ixlib=rb-4.1.0&q=80&w=1080'],
+    stock: 80,
+    reviews: [],
+    category: 'Sticks',
   }
 ];
 

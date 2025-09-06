@@ -7,7 +7,7 @@ import { ArrowRight, ShoppingCart } from 'lucide-react';
 import { AddToCartButton } from '@/components/add-to-cart-button';
 import type { Product } from '@/lib/types';
 
-const featuredProducts = products.slice(0, 3);
+const featuredProducts = products;
 
 export default function Home() {
   return (
@@ -24,10 +24,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white p-4">
           <h1 className="font-headline text-4xl md:text-6xl font-bold leading-tight">
-            The Best Cinnamon Rolls
+            Authentic Sri Lankan Spices
           </h1>
           <p className="mt-4 max-w-2xl text-lg md:text-xl text-primary-foreground/80">
-            Freshly baked, gooey, and absolutely irresistible. Made with real Ceylon cinnamon.
+            From world-renowned Ceylon Cinnamon to aromatic cloves and pepper.
           </p>
           <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/products">Shop Now <ArrowRight className="ml-2 h-5 w-5" /></Link>
@@ -37,9 +37,9 @@ export default function Home() {
 
       <section id="featured-products" className="py-16 md:py-24">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold text-center">Our Bestseller</h2>
+          <h2 className="text-3xl md:text-4xl font-headline font-bold text-center">Our Featured Products</h2>
           <p className="mt-2 text-center text-muted-foreground max-w-xl mx-auto">
-            Experience the product our customers love the most.
+            Experience the products our customers love the most.
           </p>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {featuredProducts.map((product: Product) => (
