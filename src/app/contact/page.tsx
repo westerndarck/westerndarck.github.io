@@ -102,7 +102,7 @@ export default function ContactPage() {
             <Mail className="h-6 w-6 mr-4 mt-1 text-primary"/>
             <div>
                 <h4 className="font-semibold">Email</h4>
-                <a href="mailto:ytmgteam@gmali.com" className="text-muted-foreground hover:text-primary transition-colors">ytmgteam@gmali.com</a>
+                <a href="mailto:ytmgteam@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">ytmgteam@gmail.com</a>
                 <p className="text-sm text-muted-foreground">General Inquiries</p>
             </div>
           </div>

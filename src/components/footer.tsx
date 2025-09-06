@@ -31,9 +31,9 @@ export function Footer() {
           <div>
             <h4 className="font-headline font-semibold mb-4">Connect With Us</h4>
             <div className="space-y-3">
-              <a href="mailto:ytmgteam@gmali.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+              <a href="mailto:ytmgteam@gmail.com" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-5 w-5 mr-3" />
-                ytmgteam@gmali.com
+                ytmgteam@gmail.com
               </a>
               <a href="https://twitter.com/YtmgTeam82600" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                 <Twitter className="h-5 w-5 mr-3" />
