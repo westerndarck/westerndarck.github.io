@@ -90,8 +90,10 @@ export default function CartPage() {
                 <span>Total</span>
                 <span>{total.toLocaleString('en-US', { style: 'currency', currency: 'LKR' })}</span>
               </div>
-              <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
-                Proceed to Checkout <ArrowRight className="ml-2 h-5 w-5" />
+              <Button asChild size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                <Link href="/checkout">
+                  Proceed to Checkout <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
             </CardContent>
           </Card>
