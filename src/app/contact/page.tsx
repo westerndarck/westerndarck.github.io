@@ -106,14 +106,6 @@ export default function ContactPage() {
                 <p className="text-sm text-muted-foreground">General Inquiries</p>
             </div>
           </div>
-          <div className="flex items-start">
-            <MapPin className="h-6 w-6 mr-4 mt-1 text-primary"/>
-            <div>
-                <h4 className="font-semibold">Address</h4>
-                <p className="text-muted-foreground">123 Spice Lane<br/>Colombo, Sri Lanka</p>
-                <p className="text-sm text-muted-foreground">Online-only storefront</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
