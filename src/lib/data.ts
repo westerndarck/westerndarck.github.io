@@ -38,7 +38,7 @@ export const products: Product[] = [
     description: 'Aromatic and flavorful whole cloves, perfect for both sweet and savory recipes. These cloves are hand-picked to ensure the highest quality.',
     shortDescription: '50g of whole cloves.',
     price: 1200,
-    images: ['https://images.unsplash.com/photo-1555541932-d1b7d5558184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbG92ZXN8ZW58MHx8fHwxNzE2NDEyNzM1fDA&ixlib=rb-4.1.0&q=80&w=1080'],
+    images: ['https://images.unsplash.com/photo-1604002192780-0f2c815fc29e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjbG92ZXMlMjB8ZW58MHx8fHwxNzU3MTY4MTU3fDA&ixlib=rb-4.1.0&q=80&w=1080'],
     stock: 80,
     reviews: [],
     category: 'Sticks',
