@@ -122,17 +122,6 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold">Unlock Culinary Creativity</h2>
-          <p className="mt-2 text-muted-foreground max-w-xl mx-auto">
-            Not sure what to make? Get recipe suggestions based on the cinnamon you have.
-          </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/recipes">Find a Recipe <ArrowRight className="ml-2 h-5 w-5" /></Link>
-          </Button>
-        </div>
-      </section>
     </div>
   );
 }
