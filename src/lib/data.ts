@@ -26,7 +26,7 @@ export const products: Product[] = [
     description: 'Whole black peppercorns with a sharp, pungent flavor. Sourced from the finest pepper vines in Sri Lanka, these peppercorns will add a kick to any dish.',
     shortDescription: '100g of whole black peppercorns.',
     price: 1500,
-    images: ['https://images.unsplash.com/photo-1599940822394-b295e871e98b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHwzJTIwYmxhY2slMjBwZXBwZXJ8ZW58MHx8fHwxNzE2NDEyNjU0fDA&ixlib=rb-4.1.0&q=80&w=1080'],
+    images: ['https://images.unsplash.com/photo-1612708034948-466dcc56ebde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxibGFjayUyMHBlcHBlciUyMHxlbnwwfHx8fDE3NTcxNjgwNTV8MA&ixlib=rb-4.1.0&q=80&w=1080'],
     stock: 100,
     reviews: [],
     category: 'Sticks',
