@@ -39,63 +39,7 @@ export default function ContactPage() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12">
-        <Card>
-          <CardHeader>
-            <CardTitle className="font-headline">Contact Us</CardTitle>
-            <CardDescription>
-                Send us a message and we'll get back to you as soon as possible.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            {submitted ? (
-              <div className="text-center p-8">
-                <h3 className="text-xl font-bold">Thank You!</h3>
-                <p className="text-muted-foreground">Your message has been sent. We'll be in touch shortly.</p>
-              </div>
-            ) : (
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name</FormLabel>
-                        <FormControl><Input placeholder="Your Name" {...field} /></FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email</FormLabel>
-                        <FormControl><Input type="email" placeholder="your@email.com" {...field} /></FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Message</FormLabel>
-                        <FormControl><Textarea placeholder="Your message..." {...field} rows={6} /></FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button type="submit">Send Message</Button>
-                </form>
-              </Form>
-            )}
-          </CardContent>
-        </Card>
-
+      <div className="flex justify-center">
         <div className="space-y-8">
           <h3 className="text-2xl font-headline font-bold">Our Information</h3>
           <div className="flex items-start">
