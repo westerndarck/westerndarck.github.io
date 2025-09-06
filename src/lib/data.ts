@@ -14,7 +14,7 @@ export const products: Product[] = [
     description: 'Freshly baked cinnamon rolls with a gooey center and cream cheese frosting. Made with the finest Ceylon cinnamon. A delight for your senses.',
     shortDescription: '1kg of delicious, freshly baked cinnamon rolls.',
     price: 10000,
-    images: ['https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaW5uYW1vbiUyMHJvbGxzfGVufDB8fHx8MTc1NzE5NTI4N3ww&ixlib=rb-4.1.0&q=80&w=1080'],
+    images: ['https://images.unsplash.com/photo-1601379760622-0d2e7ad24c11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaW5uYW1vbnxlbnwwfHx8fDE3NTcxMzY2ODB8MA&ixlib=rb-4.1.0&q=80&w=1080'],
     stock: 50,
     reviews: [],
     category: 'Specialty',

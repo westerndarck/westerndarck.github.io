@@ -14,7 +14,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="relative h-[60vh] min-h-[400px] w-full">
         <Image
-          src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaW5uYW1vbiUyMHJvbGxzfGVufDB8fHx8MTc1NzE5NTI4N3ww&ixlib=rb-4.1.0&q=80&w=1080"
+          src="https://images.unsplash.com/photo-1601379760622-0d2e7ad24c11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaW5uYW1vbnxlbnwwfHx8fDE3NTcxMzY2ODB8MA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Cinnamon rolls"
           data-ai-hint="cinnamon rolls"
           fill
