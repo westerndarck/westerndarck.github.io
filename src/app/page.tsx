@@ -111,7 +111,7 @@ export default function Home() {
           </div>
           <div>
             <Image
-              src="https://picsum.photos/600/500"
+              src="https://images.unsplash.com/photo-1636972955024-3b01f2236b01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHwlMjBjaW5uYW1vbiUyMHxlbnwwfHx8fDE3NTcxMzgxMDd8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Hands holding cinnamon roll"
               data-ai-hint="cinnamon hands"
               width={600}
