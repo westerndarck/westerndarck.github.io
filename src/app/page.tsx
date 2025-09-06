@@ -109,14 +109,14 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="flex items-center justify-center">
             <Image
               src="https://images.unsplash.com/photo-1636972955024-3b01f2236b01?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHwlMjBjaW5uYW1vbiUyMHxlbnwwfHx8fDE3NTcxMzgxMDd8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="Hands holding cinnamon roll"
               data-ai-hint="cinnamon hands"
-              width={600}
+              width={500}
               height={500}
-              className="rounded-lg shadow-lg w-full"
+              className="rounded-full shadow-lg aspect-square object-cover"
             />
           </div>
         </div>
