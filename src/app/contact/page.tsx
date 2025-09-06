@@ -9,7 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -104,14 +104,6 @@ export default function ContactPage() {
                 <h4 className="font-semibold">Email</h4>
                 <a href="mailto:ytmgteam@gmali.com" className="text-muted-foreground hover:text-primary transition-colors">ytmgteam@gmali.com</a>
                 <p className="text-sm text-muted-foreground">General Inquiries</p>
-            </div>
-          </div>
-          <div className="flex items-start">
-            <Phone className="h-6 w-6 mr-4 mt-1 text-primary"/>
-            <div>
-                <h4 className="font-semibold">Phone</h4>
-                <p className="text-muted-foreground">(123) 456-7890</p>
-                <p className="text-sm text-muted-foreground">Mon-Fri, 9am-5pm EST</p>
             </div>
           </div>
           <div className="flex items-start">
