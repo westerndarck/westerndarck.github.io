@@ -14,7 +14,7 @@ export const products: Product[] = [
     description: 'The highest grade of Ceylon cinnamon, Alba is renowned for its exquisite aroma, delicate flavor, and slender, smooth quills. Perfect for infusing beverages and creating visually stunning dishes. Each stick is hand-rolled to perfection.',
     shortDescription: 'Exquisite, top-grade cinnamon sticks.',
     price: 14.99,
-    images: ['https://picsum.photos/600/400?random=1', 'https://picsum.photos/600/400?random=2', 'https://picsum.photos/600/400?random=3'],
+    images: ['https://images.unsplash.com/photo-1601379760622-0d2e7ad24c11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaW5uYW1vbiUyMHxlbnwwfHx8fDE3NTcxMzYyOTR8MA&ixlib=rb-4.1.0&q=80&w=1080', 'https://picsum.photos/600/400?random=2', 'https://picsum.photos/600/400?random=3'],
     stock: 100,
     reviews: reviews.slice(0, 2),
     category: 'Sticks',
