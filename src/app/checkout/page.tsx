@@ -11,8 +11,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Copy } from 'lucide-react';
 import Link from 'next/link';
+import { useToast } from '@/hooks/use-toast';
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters."),
@@ -24,6 +25,7 @@ type FormData = z.infer<typeof formSchema>;
 export default function CheckoutPage() {
   const { cart, clearCart } = useCart();
   const [orderSummary, setOrderSummary] = useState<string | null>(null);
+  const { toast } = useToast();
 
   const subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
@@ -56,6 +58,16 @@ export default function CheckoutPage() {
     setOrderSummary(summary.trim().replace(/^ +/gm, ''));
     clearCart();
   }
+  
+  const handleCopy = () => {
+    if (orderSummary) {
+      navigator.clipboard.writeText(orderSummary);
+      toast({
+        title: "Copied to clipboard!",
+        description: "You can now paste the order details into your email.",
+      });
+    }
+  };
 
   if (orderSummary) {
     return (
@@ -68,16 +80,25 @@ export default function CheckoutPage() {
           </AlertDescription>
         </Alert>
         <Card className="mt-8 text-left">
-          <CardHeader>
+          <CardHeader className="flex flex-row items-center justify-between">
             <CardTitle>Your Order Summary</CardTitle>
+            <Button variant="outline" size="icon" onClick={handleCopy}>
+              <Copy className="h-4 w-4" />
+              <span className="sr-only">Copy order summary</span>
+            </Button>
           </CardHeader>
           <CardContent>
             <pre className="bg-muted p-4 rounded-md whitespace-pre-wrap font-sans text-sm">{orderSummary}</pre>
           </CardContent>
         </Card>
-        <Button asChild className="mt-8">
-            <Link href="/">Return to Home</Link>
-        </Button>
+        <div className="mt-8 flex justify-center gap-4">
+            <Button onClick={handleCopy}>
+                <Copy className="mr-2 h-4 w-4" /> Copy Details
+            </Button>
+            <Button asChild variant="secondary">
+                <Link href="/">Return to Home</Link>
+            </Button>
+        </div>
       </div>
     );
   }
