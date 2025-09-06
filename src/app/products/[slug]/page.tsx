@@ -69,24 +69,26 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
             height={800}
             className="w-full rounded-lg shadow-lg object-cover aspect-square"
           />
-          <div className="grid grid-cols-4 gap-2 mt-4">
-            {product.images.map((img, index) => (
-              <button key={index} onClick={() => setMainImage(img)} className={`rounded-lg overflow-hidden border-2 ${mainImage === img ? 'border-primary' : 'border-transparent'}`}>
-                <Image
-                  src={img}
-                  alt={`${product.name} thumbnail ${index + 1}`}
-                  data-ai-hint={product.name.split(' ').slice(0,2).join(' ').toLowerCase()}
-                  width={200}
-                  height={200}
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
-          </div>
+          {product.images.length > 1 && (
+            <div className="grid grid-cols-4 gap-2 mt-4">
+              {product.images.map((img, index) => (
+                <button key={index} onClick={() => setMainImage(img)} className={`rounded-lg overflow-hidden border-2 ${mainImage === img ? 'border-primary' : 'border-transparent'}`}>
+                  <Image
+                    src={img}
+                    alt={`${product.name} thumbnail ${index + 1}`}
+                    data-ai-hint={product.name.split(' ').slice(0,2).join(' ').toLowerCase()}
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
+          )}
         </div>
         <div>
           <h1 className="text-3xl md:text-4xl font-headline font-bold">{product.name}</h1>
-          <p className="text-2xl font-semibold text-primary mt-4">${product.price.toFixed(2)}</p>
+          <p className="text-2xl font-semibold text-primary mt-4">{product.price.toLocaleString('en-US', { style: 'currency', currency: 'LKR' })}</p>
           <div className="flex items-center mt-2">
             <div className="flex items-center">
               {[...Array(5)].map((_, i) => (

@@ -10,14 +10,14 @@ export default function ProductsPage() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-headline font-bold">Our Products</h1>
+        <h1 className="text-4xl md:text-5xl font-headline font-bold">Our Product</h1>
         <p className="mt-2 text-muted-foreground max-w-2xl mx-auto">
-          Explore our curated collection of authentic Ceylon cinnamon products, from premium sticks to fine powders.
+          Indulge in our freshly baked, delicious cinnamon rolls.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-center">
         {products.map((product: Product) => (
-          <Card key={product.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <Card key={product.id} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm mx-auto">
             <CardHeader className="p-0">
               <Link href={`/products/${product.slug}`}>
                 <Image
@@ -37,7 +37,7 @@ export default function ProductsPage() {
               <p className="text-muted-foreground mt-2 text-sm">{product.shortDescription}</p>
               <div className="flex justify-between items-center mt-4">
                 <p className="text-lg font-semibold text-primary">
-                  ${product.price.toFixed(2)}
+                  {product.price.toLocaleString('en-US', { style: 'currency', currency: 'LKR' })}
                 </p>
                 <AddToCartButton product={product} size="sm">
                   <ShoppingCart className="mr-2 h-4 w-4" /> Add
